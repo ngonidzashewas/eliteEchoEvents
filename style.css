@@ -141,11 +141,6 @@ place-items: center;
 box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.8);
 }
 
-
-
-
-
-
 /*HEADER*/
 header{
 max-width: 100vw;
@@ -263,8 +258,6 @@ transform: rotate(0);
 top: 0;
 left: 15rem;
 }
-
-
 
 /*general style for contact btn */
 .contact__btn{
@@ -639,9 +632,6 @@ h2{
     display: none;
 }
 
-
-
-
 /* header */
 header{
     height: fit-content;
@@ -698,9 +688,6 @@ header{
 .header__btn-md:hover{
     color: var(--color-bg-1);
 }
-
-
-
 
 /* ABOUT */
 .about__container{
