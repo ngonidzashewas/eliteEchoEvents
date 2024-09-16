@@ -209,15 +209,26 @@
             <li><a href="#exhibition">Gallery</a></li>
         </ul>
         <p class="copyright">
-            Created with 
-            <svg class="heart" width="12" height="11.1" viewBox="0 0 12 11.1">
-                <path
-                  d="M8.85,0c-1.275,0-2.363,1.013-2.85,2.1C5.513,1.013,4.425,0,3.15,0C1.425,0,0,1.425,0,3.15
-                  c0,3.525,3.563,4.463,6,7.95c2.288-3.488,6-4.538,6-7.95C12,1.425,10.575,0,8.85,0z"
-                />
-              </svg> 
+            Made with 
+            <svg class="heart" width="12" height="11.1" viewBox="0 0 12 11.1" style="fill: red; margin: 0 4px;">
+              <path
+                d="M8.85,0c-1.275,0-2.363,1.013-2.85,2.1C5.513,1.013,4.425,0,3.15,0C1.425,0,0,1.425,0,3.15
+                c0,3.525,3.563,4.463,6,7.95c2.288-3.488,6-4.538,6-7.95C12,1.425,10.575,0,8.85,0z"
+              />
+            </svg>
             by <a href="https://ngonidzashewas.github.io" class="copyright-link">@ngonidzashewas</a>.
         </p>
+          <style>
+            .heart {
+              animation: pulse 1.5s ease infinite;
+            }
+          
+            @keyframes pulse {
+              0% { transform: scale(1); }
+              50% { transform: scale(1.2); }
+              100% { transform: scale(1); }
+            }
+          </style>
     </div>
 
 </footer>
