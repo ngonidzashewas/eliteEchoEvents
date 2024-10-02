@@ -20,8 +20,7 @@
                 <li><a href="index.html#about">About</a></li>
                 <!--<li><a href="#gallery">Our Memories</a></li>-->
                 <li><a href="index.html#exhibition">Our Memories</a></li>
-                <li><a href="index.html">Services</a>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
             </ul>
              <ul class="nav__socials">
                 <li><a href="https://www.instagram.com/elite_echo_events/" target="_blank"><i class="uil uil-instagram-alt"></i></a></li>
@@ -32,8 +31,68 @@
              <button class="nav__toggle-btn" id="nav__toggle-close"><i class="uil uil-multiply"></i></button>
         </div>
     </nav>
-
-
+    
+    <section id="gallery">
+      <div class="container gallery__container swiper mySwiper">
+          <div class="gallery__head">
+              <h2 class="gallery__title">Our Memories</h2>
+              <div class="empty gallery__empty"></div>
+          </div>
+          <p><h3>
+              Capture. Celebrate. Connect. <br>
+              We believe in creating connections through celebration, and timeless moments.</h3>
+          </p>
+          <div class="swiper-wrapper">
+              <article class="swiper-slide">
+                  <img src="./images/gallery1.jpg">
+              </article>
+              <article class="swiper-slide">
+                  <img src="./images/gallery2.jpg">
+              </article>
+              <article class="swiper-slide">
+                  <img src="./images/gallery3.jpg">
+              </article>
+              <article class="swiper-slide">
+                  <img src="./images/gallery4.jpg">
+              </article>
+              <article class="swiper-slide">
+                  <img src="./images/gallery5.jpg">
+              </article>
+              <article class="swiper-slide">
+                  <img src="./images/gallery6.jpg">
+              </article>
+              <article class="swiper-slide">
+                  <img src="./images/gallery7.jpg">
+              </article>
+              <article class="swiper-slide">
+                  <img src="./images/gallery8.jpg">
+              </article>
+              <article class="swiper-slide">
+                  <img src="./images/gallery9.jpg">
+              </article>
+              <article class="swiper-slide">
+                  <img src="./images/gallery10.jpg">
+              </article>
+              <article class="swiper-slide">
+                  <img src="./images/gallery11.jpg">
+              </article>
+              <article class="swiper-slide">
+                  <img src="./images/gallery12.jpg">
+              </article>
+              <article class="swiper-slide">
+                  <img src="./images/gallery13.jpg">  
+              </article>
+              <article class="swiper-slide">
+                  <img src="./images/gallery14.jpg">
+              </article>
+              <article class="swiper-slide">
+                  <img src="./images/gallery15.jpg">
+              </article>
+          </div>
+          <div class="swiper-pagination"></div>
+      </div>
+  </section>
+  <!--gallery end-->
 
     <section id="contact">
         <footer>
@@ -47,33 +106,62 @@
                     <li><a href="index.html#about">About</a></li>
                     <!--<li><a href="#gallery">Our Memories</a></li>-->
                     <li><a href="index.html#exhibition">Our Memories</a></li>
-                    <li><a href="#">Services Offered</a></li>
-                    <li><a href="index.html">Get a Quote</a></li>
-                </ul>
-                <p>&copy; 2024 Elite Echo Events | All Rights Reserved.</p>
-                <p class="copyright">
-                    Website with
-                    <svg class="heart" width="12" height="11.1" viewBox="0 0 12 11.1" style="fill: red; margin: 0 4px;">
-                      <path
-                        d="M8.85,0c-1.275,0-2.363,1.013-2.85,2.1C5.513,1.013,4.425,0,3.15,0C1.425,0,0,1.425,0,3.15
-                        c0,3.525,3.563,4.463,6,7.95c2.288-3.488,6-4.538,6-7.95C12,1.425,10.575,0,8.85,0z"
-                      />
-                    </svg>
-                    by <a href="https://ngonidzashewas.github.io" class="copyright-link">@ngonidzashewas</a>.
-                </p>
-                  <style>
-                    .heart {
-                      animation: pulse 1.5s ease infinite;
-                    }
-                  
-                    @keyframes pulse {
-                      0% { transform: scale(1); }
-                      50% { transform: scale(1.2); }
-                      100% { transform: scale(1); }
-                    }
-                  </style>
-            </div>
-        
-        </footer>
-        </section>
+                  </ul>
+                  <p>&copy; 2024 Elite Echo Events | All Rights Reserved.</p>
+                  <p class="copyright">
+                      Website with
+                      <svg class="heart" width="12" height="11.1" viewBox="0 0 12 11.1" style="fill: red; margin: 0 4px;">
+                        <path
+                          d="M8.85,0c-1.275,0-2.363,1.013-2.85,2.1C5.513,1.013,4.425,0,3.15,0C1.425,0,0,1.425,0,3.15
+                          c0,3.525,3.563,4.463,6,7.95c2.288-3.488,6-4.538,6-7.95C12,1.425,10.575,0,8.85,0z"
+                        />
+                      </svg>
+                      by <a href="https://ngonidzashewas.github.io" class="copyright-link">@ngonidzashewas</a>.
+                  </p>
+                    <style>
+                      .heart {
+                        animation: pulse 1.5s ease infinite;
+                      }
+                    
+                      @keyframes pulse {
+                        0% { transform: scale(1); }
+                        50% { transform: scale(1.2); }
+                        100% { transform: scale(1); }
+                      }
+                    </style>
+              </div>
+          
+          </footer>
+          </section>
+          
+              <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+          <script src="./main.js"></script>
+          
+          <script type="module">
+            // Import the functions you need from the SDKs you need
+            import { initializeApp } from "https://www.gstatic.com/firebasejs/10.13.1/firebase-app.js";
+            import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.13.1/firebase-analytics.js";
+            // TODO: Add SDKs for Firebase products that you want to use
+            // https://firebase.google.com/docs/web/setup#available-libraries
+          
+            // Your web app's Firebase configuration
+            // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+            const firebaseConfig = {
+              apiKey: "AIzaSyB69nnK2fk68cotlFIUZDvi-nkasgdvuZg",
+              authDomain: "eliteechoevents.firebaseapp.com",
+              projectId: "eliteechoevents",
+              storageBucket: "eliteechoevents.appspot.com",
+              messagingSenderId: "982439770383",
+              appId: "1:982439770383:web:990f92df434afd3709267a",
+              measurementId: "G-JQYSXBX47Q"
+            };
+          
+            // Initialize Firebase
+            const app = initializeApp(firebaseConfig);
+            const analytics = getAnalytics(app);
+          </script>
+          
+          </body>
+          </html>
+
         
