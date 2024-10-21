@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
      <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css'>
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
@@ -32,7 +33,7 @@
     </nav>
 
             <div class="container header__container">  
-               <a class="header__tag"><h1><strong>Services Offered</strong></h1></a>     
+               <a class="header__tag"><h1><strong>What We Do</strong></h1></a>     
                <p>Your Photography, Stage lighting, Sound system, Tents, Back up power, Event planners and DJs.<br>
                   <strong>Let’s make your next event an epic one, together!</strong>
                </p>  
@@ -206,6 +207,30 @@
             <div class="container footer__container">
                 <div class="footer__head">
                     <p><h3>Email us at info@eliteechoevents.co.za:</h3></p><a href="mailto:info@eliteechoevents.co.za" class="footer__btn"><i class="uil uil-envelope-upload"></i></i></a>
+
+                    <p><h3>Follow us:</h3></p>
+
+             <ul class="wrapper">
+                
+                <a href="https://www.facebook.com/people/Elite-Echo-Events/100094514876985/" target="_blank">
+                <li class="icon facebook">
+                  <span class="tooltip">Facebook</span>
+                  <span><i class="fab fa-facebook-f"></i></span>
+                </li>
+                
+                <a href="https://www.instagram.com/elite_echo_events/" target="_blank">
+                <li class="icon instagram">
+                  <span class="tooltip">Instagram</span>
+                  <span><i class="fab fa-instagram"></i></span>
+                </li>
+                
+                <a href="https://www.youtube.com/@amemsipah/" target="_blank">
+                <li class="icon youtube">
+                  <span class="tooltip">Youtube</span>
+                  <span><i class="fab fa-youtube"></i></span>
+                </li>
+              </ul>
+
                     <h3 class="footer__title"></h3>
                 </div>
                 <ul class="footer__links">
@@ -243,30 +268,7 @@
           
               <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
           <script src="./main.js"></script>
-          
-          <script type="module">
-            // Import the functions you need from the SDKs you need
-            import { initializeApp } from "https://www.gstatic.com/firebasejs/10.13.1/firebase-app.js";
-            import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.13.1/firebase-analytics.js";
-            // TODO: Add SDKs for Firebase products that you want to use
-            // https://firebase.google.com/docs/web/setup#available-libraries
-          
-            // Your web app's Firebase configuration
-            // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-            const firebaseConfig = {
-              apiKey: "AIzaSyB69nnK2fk68cotlFIUZDvi-nkasgdvuZg",
-              authDomain: "eliteechoevents.firebaseapp.com",
-              projectId: "eliteechoevents",
-              storageBucket: "eliteechoevents.appspot.com",
-              messagingSenderId: "982439770383",
-              appId: "1:982439770383:web:990f92df434afd3709267a",
-              measurementId: "G-JQYSXBX47Q"
-            };
-          
-            // Initialize Firebase
-            const app = initializeApp(firebaseConfig);
-            const analytics = getAnalytics(app);
-          </script>
+          <script src="./firebaseConfig.js" type="module"></script>
           
           </body>
           </html>
